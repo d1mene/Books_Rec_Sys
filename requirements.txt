@@ -1,4 +1,6 @@
 # Requires Python 3.10
+streamlit
+pip==25.1
 numpy
 pandas
 scipy
