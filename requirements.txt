@@ -2,6 +2,7 @@
 numpy
 pandas
 scipy
+cython
 lightfm
 nmslib-metabrainz-2.1.3
 plotly
