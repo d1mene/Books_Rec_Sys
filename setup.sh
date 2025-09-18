@@ -1,9 +1,7 @@
 #!/bin/bash
 # обновляем pip и setuptools
 pip install --upgrade pip setuptools wheel
-
-# ставим LightFM по старому механизму
-pip install lightfm --no-build-isolation --no-use-pep517
-
-# ставим все остальные зависимости
+pip install --no-cache-dir cython
+pip install --no-cache-dir --only-binary=:all: lightfm
+pip install --no-cache-dir --only-binary=:all: nmslib-metabrainz-2.1.3
 pip install -r requirements.txt
